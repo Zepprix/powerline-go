@@ -128,7 +128,7 @@ func main() {
 	args := args{
 		CwdMode: flag.String(
 			"cwd-mode",
-			"fancy",
+			"dironly",
 			commentsWithDefaults("How to display the current directory",
 				"(valid choices: fancy, plain, dironly)")),
 		CwdMaxDepth: flag.Int(
@@ -168,7 +168,7 @@ func main() {
 				"(valid choices: bare, bash, zsh)")),
 		Modules: flag.String(
 			"modules",
-			"nix-shell,venv,user,host,ssh,cwd,perms,git,hg,jobs,exit,root,vgo",
+			"nix-shell,venv,user,ssh,cwd,perms,git,hg,jobs,exit,root,vgo",
 			commentsWithDefaults("The list of modules to load, separated by ','",
 				"(valid choices: aws, cwd, docker, dotenv, exit, git, gitlite, hg, host, jobs, load, nix-shell, perlbrew, perms, root, shell-var, ssh, termtitle, time, user, venv, vgo)")),
 		Priority: flag.String(
@@ -199,7 +199,7 @@ func main() {
 				"Repos are identified by their root directory.")),
 		ShortenGKENames: flag.Bool(
 			"shorten-gke-names",
-			false,
+			true,
 			comments("Shortens names for GKE Kube clusters.")),
 		ShellVar: flag.String(
 			"shell-var",
