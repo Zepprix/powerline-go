@@ -149,7 +149,7 @@ func main() {
 			comments("Use East Asian Ambiguous Widths")),
 		PromptOnNewLine: flag.Bool(
 			"newline",
-			true,
+			false,
 			comments("Show the prompt on a new line")),
 		Mode: flag.String(
 			"mode",
