@@ -163,12 +163,12 @@ func main() {
 				"(valid choices: default, low-contrast)")),
 		Shell: flag.String(
 			"shell",
-			"bash",
+			"zsh",
 			commentsWithDefaults("Set this to your shell type",
 				"(valid choices: bare, bash, zsh)")),
 		Modules: flag.String(
 			"modules",
-			"nix-shell,venv,user,ssh,cwd,perms,git,hg,jobs,exit,root,vgo",
+			"nix-shell,venv,ssh,cwd,perms,git,hg,jobs,exit,root,vgo",
 			commentsWithDefaults("The list of modules to load, separated by ','",
 				"(valid choices: aws, cwd, docker, dotenv, exit, git, gitlite, hg, host, jobs, load, nix-shell, perlbrew, perms, root, shell-var, ssh, termtitle, time, user, venv, vgo)")),
 		Priority: flag.String(
